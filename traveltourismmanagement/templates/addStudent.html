@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{% extends 'master.html' %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +6,7 @@
 </head>
 <body>
 <center>
+    {% block content %}
 <form action="{% url 'insertStudent' %}" method="post">
     {% csrf_token %}
     <b>Enter student ID:</b>
@@ -14,6 +15,7 @@
     <input type="text" name="sname"><br/><br/>
     <input type="submit" value="addstudent"/>
 </form>
+    {% endblock %}
     </center>
 </body>
 </html>
