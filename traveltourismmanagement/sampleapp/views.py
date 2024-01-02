@@ -21,3 +21,10 @@ def deleteStudent(request,pk):
     student=Student.objects.get(sid=pk)
     student.delete()
     return redirect("viewStudent")
+def updateStudent(request,pk):
+    student = Student.objects.get(sid=pk)
+    if request.method == 'POST':
+        student.sname =request.POST['sname']
+        student.save()
+        return redirect("viewStudent")
+    return render(request,"updateStudent.html",{"students":student})

@@ -11,6 +11,7 @@
                 <th>SID</th>
                 <th>SNAME</th>
                 <th>DELETE</th>
+                <th>UPDATE</th>
             </tr>
             {% for st in students %}
             <tr>
@@ -22,6 +23,9 @@
                 </td>
                 <td>
                     <a href="deleteStudent/{{ st.sid }}">DELETE</a>
+                </td>
+                <td>
+                    <a href="updateStudent/{{ st.sid }}">UPDATE</a>
                 </td>
             </tr>
             {% endfor %}
