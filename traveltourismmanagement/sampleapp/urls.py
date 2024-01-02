@@ -5,6 +5,7 @@ urlpatterns=[
     path("addStudent",views.addStudent,name="addStudent"),
     path("insertStudent",views.insertStudent,name="insertStudent"),
     path("contact",views.contact,name="contact"),
+    path("viewStudent",views.viewStudents,name="viewStudent"),
 ]
 
 

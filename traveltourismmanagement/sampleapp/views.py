@@ -14,3 +14,6 @@ def insertStudent(request):
     return render(request,'display.html')
 def contact(request):
     return render(request,"contact.html")
+def viewStudents(request):
+    students = Student.objets.all()
+    return render(request,"studentlist.html",{"students":students})
