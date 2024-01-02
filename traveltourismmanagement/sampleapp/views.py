@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Student
 # Create your views here.
 def home(request):
@@ -15,5 +15,9 @@ def insertStudent(request):
 def contact(request):
     return render(request,"contact.html")
 def viewStudents(request):
-    students = Student.objets.all()
-    return render(request,"studentlist.html",{"students":students})
+    students =Student.objects.all()
+    return render(request,'studentlist.html',{"students":students})
+def deleteStudent(request,pk):
+    student=Student.objects.get(sid=pk)
+    student.delete()
+    return redirect("viewStudent")
