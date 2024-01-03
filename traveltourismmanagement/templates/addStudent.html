@@ -5,8 +5,8 @@
     <title>{% block title %}Add the student{% endblock %}</title>
 </head>
 <body>
-<center>
     {% block content %}
+    <center>
 <form action="{% url 'insertStudent' %}" method="post">
     {% csrf_token %}
     <b>Enter student ID:</b>
@@ -15,7 +15,7 @@
     <input type="text" name="sname"><br/><br/>
     <input type="submit" value="addstudent"/>
 </form>
+        </center>
     {% endblock %}
-    </center>
 </body>
 </html>
