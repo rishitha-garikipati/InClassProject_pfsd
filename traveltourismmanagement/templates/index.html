@@ -6,7 +6,7 @@
 </head>
 <body>
     <form action ="POST" class="post-form">
-        {% csrf+token %}
+        {% csrf_token %}
         {{ form.as_p }}
         <input type="Submit" class ="save btn btn-primary" value="SAVE"/>
     </form>
