@@ -41,8 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'sampleapp',
     'adminapp',
-    'userapp',
     'generalapp',
+    'userapp',
     'bootstrap5',
     'traveltourismmanagement',
 ]
