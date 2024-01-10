@@ -8,6 +8,7 @@ urlpatterns=[
     path("viewStudent",views.viewStudents,name="viewStudent"),
     path("deleteStudent/<int:pk>",views.deleteStudent,name="deleteStudent"),
     path("updateStudent/<int:pk>", views.updateStudent, name="updateStudent"),
+    path("index",views.index,name="index"),
 
 ]
 
