@@ -42,9 +42,9 @@ INSTALLED_APPS = [
     'sampleapp',
     'adminapp',
     'generalapp',
-    'userapp',
     'bootstrap5',
     'traveltourismmanagement',
+    'userapp',
 ]
 
 MIDDLEWARE = [
