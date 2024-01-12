@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from .models import Student
-from .forms import EmployeeForm
+from .forms import EmployeeForm, EmpForm
 # Create your views here.
 def home(request):
     return render(request,'home.html')
@@ -33,3 +33,7 @@ def updateStudent(request,pk):
 def index(request):
     emp = EmployeeForm()
     return render(request,"index.html",{"form":emp})
+
+def index1(request):
+    emp = Empform()
+    return render(request, "index.html", {"form": emp})
