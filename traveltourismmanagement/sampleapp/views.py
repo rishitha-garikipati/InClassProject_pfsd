@@ -34,6 +34,7 @@ def index(request):
     emp = EmployeeForm()
     return render(request,"index.html",{"form":emp})
 
+
 def index1(request):
-    emp = Empform()
+    emp = EmpForm()
     return render(request, "index.html", {"form": emp})

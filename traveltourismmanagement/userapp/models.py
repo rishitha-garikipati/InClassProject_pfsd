@@ -1,6 +1,4 @@
 from django.db import models
-
-
 # Create your models here.
 class Roles(models.Model):
     role_id = models.IntegerField(blank=False, primary_key=True)

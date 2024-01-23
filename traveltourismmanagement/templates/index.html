@@ -7,9 +7,12 @@
 <body>
     <form action ="POST" class="post-form">
         {% csrf_token %}
-        {{ form.as_p }}
+        {% for field in form %}
+            <div class="fieldWrapper">
+                {{field.label_tag}} {{field}}
+            </div>
+        {% endfor %}
         <input type="Submit" class ="save btn btn-primary" value="SAVE"/>
     </form>
-
 </body>
 </html>

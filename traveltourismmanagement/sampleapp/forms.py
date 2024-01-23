@@ -1,5 +1,6 @@
 from django import forms
 from .models import Employee
+
 class EmployeeForm(forms.Form):
     emp_id = forms.IntegerField(label="Enter Employee ID:")
     emp_name=forms.CharField(label="Enter Employee Name:",max_length=50)
