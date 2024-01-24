@@ -42,9 +42,11 @@ INSTALLED_APPS = [
     'sampleapp',
     'adminapp',
     'generalapp',
+    'userapp',
     'bootstrap5',
     'traveltourismmanagement',
-    'userapp',
+    'crispy_forms',
+    'crispy_bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -134,3 +136,4 @@ STATICFILES_DIRS = [STATIC_URL]
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
