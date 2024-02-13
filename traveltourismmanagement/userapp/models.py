@@ -4,12 +4,6 @@ from django.db import models
 from django.db import models
 
 # Create your models here.
-class Roles(models.Model):
-    role_id = models.IntegerField(blank=False,primary_key=True)
-    role_type = models.CharField(max_length=100,blank=False)
-
-    class Meta:
-        db_table = "roles"
 
 
 class Users(models.Model):
