@@ -37,14 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'sampleapp',
     'adminapp',
-    'generalapp',
-    'crispy_forms',
     'userapp',
+    'generalapp',
     'bootstrap5',
-    'crispy_forms',
     'crispy_bootstrap4',
+    'crispy_forms',
 ]
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -74,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'traveltourismmanagement.wsgi.application'
+WSGI_APPLICATION = 'travel.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
@@ -86,7 +84,7 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': 'root',
         'HOST': 'localhost',
-        'POST': '5432',
+        'PORT': '5432',
     }
 }
 
@@ -107,6 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
@@ -132,4 +131,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = 'media/'
+MEDIA_URL = '/media/'
